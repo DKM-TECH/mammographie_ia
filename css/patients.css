@@ -1,0 +1,205 @@
+/* =========================
+   GLOBAL
+========================= */
+
+body {
+    background: #0f172a;
+    font-family: "Segoe UI", sans-serif;
+    color: #e2e8f0;
+}
+
+/* =========================
+   LAYOUT WRAPPER
+========================= */
+
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+    width: 260px;
+    background: #1e293b;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+}
+
+.sidebar .logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar .logo i {
+    font-size: 28px;
+    color: #38bdf8;
+}
+
+.sidebar .logo h2 {
+    margin: 10px 0 0;
+    font-size: 20px;
+    color: #fff;
+}
+
+.sidebar .logo small {
+    color: #94a3b8;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    border-radius: 10px;
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background: #334155;
+    color: #fff;
+}
+
+.sidebar ul li.active a {
+    background: linear-gradient(135deg, #38bdf8, #2563eb);
+    color: #fff;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.main {
+    margin-left: 260px;
+    padding: 30px;
+    width: 100%;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header h2 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #38bdf8;
+}
+
+header span {
+    color: #94a3b8;
+}
+
+/* =========================
+   CARD TABLE
+========================= */
+
+.card {
+    background: #1e293b;
+    border: none;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* =========================
+   TABLE
+========================= */
+
+.table {
+    color: #e2e8f0;
+}
+
+.table thead {
+    background: #0f172a;
+    color: #38bdf8;
+}
+
+.table tbody tr {
+    transition: 0.2s;
+}
+
+.table tbody tr:hover {
+    background: #334155;
+}
+
+/* =========================
+   BADGES
+========================= */
+
+.badge {
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+/* Bootstrap override amélioré */
+.bg-success {
+    background-color: #22c55e !important;
+}
+
+.bg-warning {
+    background-color: #f59e0b !important;
+}
+
+.bg-danger {
+    background-color: #ef4444 !important;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn-primary {
+    background: linear-gradient(135deg, #38bdf8, #2563eb);
+    border: none;
+    border-radius: 10px;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #0ea5e9, #1d4ed8);
+}
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+
+.btn-sm {
+    border-radius: 8px;
+    padding: 4px 10px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .main {
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    .wrapper {
+        flex-direction: column;
+    }
+}
